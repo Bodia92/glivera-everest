@@ -32,42 +32,53 @@
     <header class="header">
       <div class="header_in section_in">
         <div class="header__body"><a class="header__logo" href="#"><img class="header__logo_img" src="images/header_logo.png" alt="logo"></a>
-          <nav class="header__menu">
-            <ul class="header__menu_list ">
-              <li class="header__menu_item header__menu_item--active_mod "><a class="header__menu_link " href="#">О нас</a></li>
-              <li class="header__menu_item  "><a class="header__menu_link " href="#">Решения</a></li>
-              <li class="header__menu_item  "><a class="header__menu_link " href="#">Аналитика</a></li>
-              <li class="header__menu_item  "><a class="header__menu_link " href="#">Партнеры</a></li>
-              <li class="header__menu_item  "><a class="header__menu_link " href="#">Контакты</a></li>
-              <li class="header__menu_item  "><a class="header__menu_link " href="#">Подписка</a></li>
-            </ul>
-            <ul class="social_list header__social">
-              <li class="social_item"><a class="social_link social_link--size_1_mod" href="#" target="_blank">
-                  <svg class="icon icon_facebook icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#facebook"></use>
-                  </svg></a></li>
-              <li class="social_item"><a class="social_link social_link--size_2_mod" href="#" target="_blank">
-                  <svg class="icon icon_twitter icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#twitter"></use>
-                  </svg></a></li>
-              <li class="social_item"><a class="social_link social_link--size_3_mod" href="#" target="_blank">
-                  <svg class="icon icon_rss icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#rss"></use>
-                  </svg></a></li>
-              <li class="social_item"><a class="social_link social_link--size_4_mod" href="#" target="_blank">
-                  <svg class="icon icon_youtube icon--size_mod">
-                    <use xlink:href="images/sprite/sprite.svg#youtube"></use>
-                  </svg></a></li>
-            </ul><a class="header__search" href="#">
-              <svg class="icon icon_search icon--size_mod">
-                <use xlink:href="images/sprite/sprite.svg#search"></use>
-              </svg></a>
-            <ul class="lang_list header__lang">
-              <li class="lang_list__item"><a class="lang_list__link" href="#">Ua</a></li>
-              <li class="lang_list__item"><a class="lang_list__link" href="#">Ru</a></li>
-            </ul>
-          </nav>
-          <div class="header__menu_trigger menuTrigger"><span class="header__menu_trigger_decor"></span></div>
+          <div class="header__menu_wrapper">
+            <nav class="header__menu">
+              <ul class="header__menu_list ">
+                <li class="header__menu_item header__menu_item--active_mod "><a class="header__menu_link " href="#">О нас</a></li>
+                <li class="header__menu_item  "><a class="header__menu_link " href="#">Решения</a></li>
+                <li class="header__menu_item  "><a class="header__menu_link " href="#">Аналитика</a></li>
+                <li class="header__menu_item  "><a class="header__menu_link " href="#">Партнеры</a></li>
+                <li class="header__menu_item  "><a class="header__menu_link " href="#">Контакты</a></li>
+                <li class="header__menu_item  "><a class="header__menu_link " href="#">Подписка</a></li>
+              </ul>
+              <div class="header__social_wrapper">
+                <ul class="social_list header__social">
+                  <li class="social_item"><a class="social_link social_link--size_1_mod" href="#" target="_blank">
+                      <svg class="icon icon_facebook icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_2_mod" href="#" target="_blank">
+                      <svg class="icon icon_twitter icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#twitter"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_3_mod" href="#" target="_blank">
+                      <svg class="icon icon_rss icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#rss"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_4_mod" href="#" target="_blank">
+                      <svg class="icon icon_youtube icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <form class="header_form">
+                <div class="header_form__input">
+                  <div class="form_input__field">
+                    <input class="header_form_element" type="search" id="search" placeholder="" value="">
+                  </div>
+                </div><a class="header_form__search" href="#">
+                  <svg class="icon icon_search icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#search"></use>
+                  </svg></a>
+              </form>
+              <ul class="lang_list header__lang">
+                <li class="lang_list__item"><a class="lang_list__link" href="#">Ua</a></li>
+                <li class="lang_list__item"><a class="lang_list__link" href="#">Ru</a></li>
+              </ul>
+            </nav>
+          </div>
+          <button class="header__menu_trigger menuTrigger" type="button" aria-label="open/hide menu"><span class="header__menu_trigger_decor"></span></button>
         </div>
       </div>
     </header>
@@ -76,383 +87,458 @@
         <section class="section grid_section">
           <div class="section_in">
             <div class="grid_body">
-              <div class="grid_item grid_item--pos_1_mod">
-                <picture class="grid_item__background">
-                  <source srcset="images/item-1.jpg.webp" type="image/webp">
-                  <source srcset="images/item-1.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-1.jpg" alt="background">
-                </picture>
-                <div class="grid_item__content grid_item__content--style_1_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link" href="#">Здравоохранение </a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
-                  </div><a class="grid_item__title" href="#">Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Страховая компания Berkshire Hathaway (BHHC) использует аналитическое решение CLARA для выплат компенсаций</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Страхование</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Правительство Великобритании инвестировало 40 млн. фунтов стерлингов в цифровые сервисы в целях улучшения кибербезопасности </a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Компания EchoNous создала KOSMOS AI – прибор для диагностики пациентов прямо в больничной палате</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_1" href="#">Телекоммуникации</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">BearingPoint продлила соглашение с инкубатором телекоммуникационной группы Telefonica, компанией Wayra</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_2_mod">
-                <picture class="grid_item__background">
-                  <source srcset="images/item-2.jpg.webp" type="image/webp">
-                  <source srcset="images/item-2.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-2.jpg" alt="background">
-                </picture>
-                <div class="grid_item__content grid_item__content--style_1_mod">
-                  <div class="grid__new_icon">NEW!</div>
-                  <h3 class="grid_item__content_title"><strong>Digital transformation</strong> <span>по-украински</span></h3>
-                  <div class="grid_item__tags">
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Юрий Чубатюк</a></div>
-                  </div>
-                  <buttom class="grid_item__btn" type="button"><span class="grid_item__btn_title">Смотреть</span><span class="grid_item__btn_icon">
-                      <svg class="icon icon_play icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#play"></use>
-                      </svg></span></buttom>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod">
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
-                  </div><a class="grid_item__title" href="#">Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении</a>
-                  <p class="grid_item__text">Решение дает возможность обеспечить комплексную, надежную защиту ИТ-инфраструктуры и регулирует уровень технических нагрузок с полным охватом разных цифровых систем</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Служба доставки еды Foodora Canada заключила партнерские отношения с производителем роботов-курьеров Tiny Mile</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">BL Bank использует технологии для создания новых источников дохода</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-6.jpg.webp" type="image/webp">
-                    <source srcset="images/item-6.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-6.jpg" alt="item">
-                  </picture><span class="grid_item__btn_icon">
-                    <svg class="icon icon_play_video icon--size_mod">
-                      <use xlink:href="images/sprite/sprite.svg#play_video"></use>
-                    </svg></span></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл и eCommerce</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
-                  </div><a class="grid_item__title" href="#">Используя Alteryx, компания Coca-Cola снизила расходы на 60%</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл и eCommerce</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">MakeMyTrip использует цифровые платформы, способствующие более широкому распространению электронной коммерции</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Страхование</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Страховая компания Kotak Life Insurance использует интеллектуальные алгоритмы для проверки статуса клиента</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-4.jpg.webp" type="image/webp">
-                    <source srcset="images/item-4.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-4.jpg" alt="item">
-                  </picture></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
-                  </div><a class="grid_item__title" href="#">Кибербезопасность и стабильность сети от WatchGuard для защиты данных и оптимизации бизнес-процессов</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл/еCommerce</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
-                  </div><a class="grid_item__title" href="#">Citi ежегодно тратит на технологии более 8 млрд. дол., являясь лидером в области цифровых решений в сфере банкинга</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_5_mod">
-                <div class="grid_item__content grid_item__content--style_5_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
-                  </div><a class="grid_item__title" href="#">Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов</a>
-                  <p class="grid_item__text">Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-3.jpg.webp" type="image/webp">
-                    <source srcset="images/item-3.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-3.jpg" alt="item">
-                  </picture></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Денис Полищук</a></div>
-                  </div><a class="grid_item__title" href="#">AI и ML от Dataiku в банковском деле для безопасности и эффективного управления данными</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_1" href="#">Телекоммуникации</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">China Unicom применяет аналитику больших данных и Nokia Predictive Care для выявления аномалий в пакетном ядре</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-4.jpg.webp" type="image/webp">
-                    <source srcset="images/item-4.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-4.jpg" alt="item">
-                  </picture></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
-                  </div><a class="grid_item__title" href="#">Smart Farming от Alteryx для цифрового преобразования и развития сельского хозяйства</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-3.jpg.webp" type="image/webp">
-                    <source srcset="images/item-3.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-3.jpg" alt="item">
-                  </picture></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
-                  </div><a class="grid_item__title" href="#">Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
-                  <picture class="grid_item__image_in">
-                    <source srcset="images/item-7.jpg.webp" type="image/webp">
-                    <source srcset="images/item-7.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-7.jpg" alt="item">
-                  </picture></a>
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика </a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
-                  </div><a class="grid_item__title" href="#">Поставщик технологических логистических решений Aramex применяет MobiControl для контроля активов</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
-                  </div><a class="grid_item__title" href="#">Новейшая интеллектуальная защита корпоративных данных от Bitdefender для Patria Bank</a>
-                  <p class="grid_item__text">Решение является одним из лучших на рынке для обеспечения ИТ-безопасности и эффективной борьбы с киберпреступностью</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Метрополитен Лос-Анджелеса использует TAP-браслеты для валидации пассажиров</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_5_mod">
-                <picture class="grid_item__background">
-                  <source srcset="images/item-5.jpg.webp" type="image/webp">
-                  <source srcset="images/item-5.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-5.jpg" alt="background">
-                </picture>
-                <div class="grid_item__content grid_item__content--style_6_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link" href="#">Государственный сектор </a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
-                  </div><a class="grid_item__title" href="#">Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов</a>
-                  <p class="grid_item__text">Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
-                  </div><a class="grid_item__title" href="#">PPG Industries использует прогнозную аналитику для поддержания промышленных активов в функциональном состоянии</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div><span class="grid_item__icon">
-                      <svg class="icon icon_light icon--size_mod">
-                        <use xlink:href="images/sprite/sprite.svg#light"></use>
-                      </svg></span>
-                  </div><a class="grid_item__title" href="#">Инвестиционная компания Franklin Templeton Investments применяет решение о данных от Fractal</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item">
-                <div class="grid_item__content grid_item__content--style_2_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
-                  </div><a class="grid_item__title" href="#">Gali Health представила персонального помощника по здоровью – Gali AI</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Ритейл и eCommerce</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Денис Полищук</a></div>
-                  </div><a class="grid_item__title" href="#">PepsiCo повысила скорость составления отчётов о продажах на 90%</a>
-                  <p class="grid_item__text">ПО сочетает обработку естественного языка, методологию синтаксического анализа неструктурированного текста и специальное ПО под базы данных для определения атрибутов платежа. Решение приводит к прогнозируемой ежегодной экономии в размере 6 млн. долл. в виде затрат на обработку и доработку вручную</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod">
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Телекоммуникации</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
-                  </div><a class="grid_item__title" href="#">Обеспечение максимальной защиты данных от Forcepoint для безопасности работы всего предприятия</a>
-                  <p class="grid_item__text">Решение помогает избежать угроз нарушения сохранности конфиденциальной информации и управлять данными в режиме реального времени</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
-                  </div><a class="grid_item__title" href="#">Goldman Sachs проводит цифровую трансформацию с помощью приложений на базе машинного обучения </a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_3_mod">
-                <div class="grid_item__content grid_item__content--style_4_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
-                  </div><a class="grid_item__title" href="#">Служба внутренних доходов США применяет аналитику данных для борьбы с мошенничеством</a>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
-                </div>
-              </div>
-              <div class="grid_item grid_item--pos_4_mod">
-                <div class="grid_item__content grid_item__content--style_3_mod">
-                  <div class="grid_item__tags">
-                    <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
-                    <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
-                  </div><a class="grid_item__title" href="#">Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point</a>
-                  <p class="grid_item__text">Dome9 – это комплексная программная платформа для обеспечения безопасности и согласования общедоступных облаков. Используя Dome9, компания оценивает свой уровень безопасности, защищает пользователей от кражи личной информации и потери данных в облаке</p>
-                  <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
-                </div>
-              </div>
+                      <div class="grid_item grid_item--pos_1_mod">
+                        <picture class="grid_item__background">
+                          <source srcset="images/item-1.jpg.webp" type="image/webp">
+                          <source srcset="images/item-1.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-1.jpg" alt="background">
+                        </picture>
+                        <div class="grid_item__content grid_item__content--style_1_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link" href="#">Здравоохранение </a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Страховая компания Berkshire Hathaway (BHHC) использует аналитическое решение CLARA для выплат компенсаций</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Страхование</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Правительство Великобритании инвестировало 40 млн. фунтов стерлингов в цифровые сервисы в целях улучшения кибербезопасности </a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Компания EchoNous создала KOSMOS AI – прибор для диагностики пациентов прямо в больничной палате</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_1" href="#">Телекоммуникации</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">BearingPoint продлила соглашение с инкубатором телекоммуникационной группы Telefonica, компанией Wayra</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_2_mod">
+                        <picture class="grid_item__background">
+                          <source srcset="images/item-2.jpg.webp" type="image/webp">
+                          <source srcset="images/item-2.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-2.jpg" alt="background">
+                        </picture>
+                        <div class="grid_item__content grid_item__content--style_1_mod">
+                          <div class="grid__new_icon">NEW!</div>
+                          <h3 class="grid_item__content_title"><strong>Digital</strong><strong>transformation</strong><span>по-украински</span></h3>
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Юрий Чубатюк</a></div>
+                            </div>
+                          </div>
+                          <button class="grid_item__btn" type="button" aria-label="play video"><span class="grid_item__btn_title">Смотреть</span><span class="grid_item__btn_icon">
+                              <svg class="icon icon_play icon--size_mod">
+                                <use xlink:href="images/sprite/sprite.svg#play"></use>
+                              </svg></span></button>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod">
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Противостояние кибератакам и вирусам с помощью Bitdefender для эффективного администрирования безопасности в медучреждении</a>
+                          <p class="grid_item__text">Решение дает возможность обеспечить комплексную, надежную защиту ИТ-инфраструктуры и регулирует уровень технических нагрузок с полным охватом разных цифровых систем</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Служба доставки еды Foodora Canada заключила партнерские отношения с производителем роботов-курьеров Tiny Mile</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">BL Bank использует технологии для создания новых источников дохода</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-6.jpg.webp" type="image/webp">
+                            <source srcset="images/item-6.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-6.jpg" alt="item">
+                          </picture><span class="grid_item__btn_icon">
+                            <svg class="icon icon_play_video icon--size_mod">
+                              <use xlink:href="images/sprite/sprite.svg#play_video"></use>
+                            </svg></span></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл и eCommerce</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Используя Alteryx, компания Coca-Cola снизила расходы на 60%</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл и eCommerce</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">MakeMyTrip использует цифровые платформы, способствующие более широкому распространению электронной коммерции</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Страхование</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Страховая компания Kotak Life Insurance использует интеллектуальные алгоритмы для проверки статуса клиента</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-4.jpg.webp" type="image/webp">
+                            <source srcset="images/item-4.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-4.jpg" alt="item">
+                          </picture></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Кибербезопасность и стабильность сети от WatchGuard для защиты данных и оптимизации бизнес-процессов</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_7" href="#">Ритейл/еCommerce</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Citi ежегодно тратит на технологии более 8 млрд. дол., являясь лидером в области цифровых решений в сфере банкинга</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_5_mod">
+                        <div class="grid_item__content grid_item__content--style_5_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов</a>
+                          <p class="grid_item__text">Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-3.jpg.webp" type="image/webp">
+                            <source srcset="images/item-3.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-3.jpg" alt="item">
+                          </picture></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Денис Полищук</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">AI и ML от Dataiku в банковском деле для безопасности и эффективного управления данными</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_1" href="#">Телекоммуникации</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">China Unicom применяет аналитику больших данных и Nokia Predictive Care для выявления аномалий в пакетном ядре</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-4.jpg.webp" type="image/webp">
+                            <source srcset="images/item-4.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-4.jpg" alt="item">
+                          </picture></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Smart Farming от Alteryx для цифрового преобразования и развития сельского хозяйства</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-3.jpg.webp" type="image/webp">
+                            <source srcset="images/item-3.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-3.jpg" alt="item">
+                          </picture></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod"><a class="grid_item__image" href="#">
+                          <picture class="grid_item__image_in">
+                            <source srcset="images/item-7.jpg.webp" type="image/webp">
+                            <source srcset="images/item-7.jpg" type="image/jpg"><img class="grid_item__image_img" src="images/item-7.jpg" alt="item">
+                          </picture></a>
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика </a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Поставщик технологических логистических решений Aramex применяет MobiControl для контроля активов</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Новейшая интеллектуальная защита корпоративных данных от Bitdefender для Patria Bank</a>
+                          <p class="grid_item__text">Решение является одним из лучших на рынке для обеспечения ИТ-безопасности и эффективной борьбы с киберпреступностью</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_2" href="#">Транспорт и логистика</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Метрополитен Лос-Анджелеса использует TAP-браслеты для валидации пассажиров</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_5_mod">
+                        <picture class="grid_item__background">
+                          <source srcset="images/item-5.jpg.webp" type="image/webp">
+                          <source srcset="images/item-5.jpg" type="image/jpg"><img class="grid_item__background_img" src="images/item-5.jpg" alt="background">
+                        </picture>
+                        <div class="grid_item__content grid_item__content--style_6_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link" href="#">Государственный сектор </a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Артём Голоскевич</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Логистическая компания Yusen Logistics применяет Alteryx для составления аналитических отчётов</a>
+                          <p class="grid_item__text">Платформа стала профессиональным инструментом для процесса ETL. На основании полученных данных бизнес-аналитики компании смогли извлекать требуемую информацию, проводить бизнес-ориентированный анализ и формировать отчёты для финансового отдела</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">PPG Industries использует прогнозную аналитику для поддержания промышленных активов в функциональном состоянии</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__wrapper_icon"><span class="grid_item__icon">
+                                  <svg class="icon icon_light icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#light"></use>
+                                  </svg></span></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Инвестиционная компания Franklin Templeton Investments применяет решение о данных от Fractal</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item">
+                        <div class="grid_item__content grid_item__content--style_2_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Gali Health представила персонального помощника по здоровью – Gali AI</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_6" href="#">Ритейл и eCommerce</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Денис Полищук</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">PepsiCo повысила скорость составления отчётов о продажах на 90%</a>
+                          <p class="grid_item__text">ПО сочетает обработку естественного языка, методологию синтаксического анализа неструктурированного текста и специальное ПО под базы данных для определения атрибутов платежа. Решение приводит к прогнозируемой ежегодной экономии в размере 6 млн. долл. в виде затрат на обработку и доработку вручную</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod">
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Телекоммуникации</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Пётр Ванькин</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Обеспечение максимальной защиты данных от Forcepoint для безопасности работы всего предприятия</a>
+                          <p class="grid_item__text">Решение помогает избежать угроз нарушения сохранности конфиденциальной информации и управлять данными в режиме реального времени</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_4" href="#">Здравоохранение</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Goldman Sachs проводит цифровую трансформацию с помощью приложений на базе машинного обучения </a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_3_mod">
+                        <div class="grid_item__content grid_item__content--style_4_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_3" href="#">Банки</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Аполлинарий Космодемьянский</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Служба внутренних доходов США применяет аналитику данных для борьбы с мошенничеством</a>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 1 мин</span></div>
+                        </div>
+                      </div>
+                      <div class="grid_item grid_item--pos_4_mod">
+                        <div class="grid_item__content grid_item__content--style_3_mod">
+                          <div class="grid_item__wrapper_tags">
+                            <div class="grid_item__tags">
+                              <div class="grid_item__tag"><a class="grid_item__tag_link grid_item__tag--color_mod_5" href="#">Государственный сектор</a></div>
+                              <div class="grid_item__autor"><a class="grid_item__autor_link" href="#">Автор: Владимир Мищенко</a></div>
+                            </div>
+                          </div><a class="grid_item__title" href="#">Western Union защищает финансовые сделки на AWS, используя CloudGuard Dome9 от Check Point</a>
+                          <p class="grid_item__text">Dome9 – это комплексная программная платформа для обеспечения безопасности и согласования общедоступных облаков. Используя Dome9, компания оценивает свой уровень безопасности, защищает пользователей от кражи личной информации и потери данных в облаке</p>
+                          <div class="grid_item__info"><span class="grid_item__info_data">00 окт 20</span><span class="grid_item__info_time">~ 6 мин</span></div>
+                        </div>
+                      </div>
             </div>
           </div>
         </section>
       </div>
       <footer class="footer">
         <div class="footer__in section_in">
-          <div class="footer__body">
-            <div class="footer__column"><a class="footer__logo" href="#"><img class="footer__logo_img" src="images/footer_logo.png" alt="logo"></a>
-              <h3 class="footer__title">Платформа AI</h3>
-              <ul class="social_list footer__social">
-                <li class="social_item"><a class="social_link social_link--size_1_mod" href="#" target="_blank">
-                    <svg class="icon icon_facebook icon--size_mod">
-                      <use xlink:href="images/sprite/sprite.svg#facebook"></use>
-                    </svg></a></li>
-                <li class="social_item"><a class="social_link social_link--size_2_mod" href="#" target="_blank">
-                    <svg class="icon icon_twitter icon--size_mod">
-                      <use xlink:href="images/sprite/sprite.svg#twitter"></use>
-                    </svg></a></li>
-                <li class="social_item"><a class="social_link social_link--size_3_mod" href="#" target="_blank">
-                    <svg class="icon icon_rss icon--size_mod">
-                      <use xlink:href="images/sprite/sprite.svg#rss"></use>
-                    </svg></a></li>
-                <li class="social_item"><a class="social_link social_link--size_4_mod" href="#" target="_blank">
-                    <svg class="icon icon_youtube icon--size_mod">
-                      <use xlink:href="images/sprite/sprite.svg#youtube"></use>
-                    </svg></a></li>
-              </ul>
-              <div class="footer__copyright"><span class="footer__copyright_icon">©</span><span class="footer__copyright_text">2020 Everest.</span><span class="footer__copyright_text">ALL RIGHTS RESERVED</span></div>
+          <div class="footer__wrapper">
+            <div class="footer__column footer__column--mod_logo"><a class="footer__logo" href="#"><img class="footer__logo_img" src="images/footer_logo.png" alt="logo"></a>
+              <div class="footer__column_body">
+                <h3 class="footer__title">Платформа AI</h3>
+                <ul class="social_list footer__social">
+                  <li class="social_item"><a class="social_link social_link--size_1_mod" href="#" target="_blank">
+                      <svg class="icon icon_facebook icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_2_mod" href="#" target="_blank">
+                      <svg class="icon icon_twitter icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#twitter"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_3_mod" href="#" target="_blank">
+                      <svg class="icon icon_rss icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#rss"></use>
+                      </svg></a></li>
+                  <li class="social_item"><a class="social_link social_link--size_4_mod" href="#" target="_blank">
+                      <svg class="icon icon_youtube icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                      </svg></a></li>
+                </ul>
+                <div class="footer__copyright"><span class="footer__copyright_icon">©</span><span class="footer__copyright_text">2020 Everest.</span><span class="footer__copyright_text">ALL RIGHTS RESERVED</span></div>
+              </div>
             </div>
             <div class="footer__column">
               <ul class="footer__menu_list ">
@@ -481,9 +567,11 @@
             </div>
             <div class="footer__column footer__column--mod_width">
               <h3 class="footer__title">О нас</h3>
-              <p class="footer__text">EVEREST - опытный интегратор digital-технологий, продуктов и сервисов для цифровой трансформации бизнеса, корпоративного и государственного секторов.</p>
-              <p class="footer__text">Разрабатывает и внедряет решения на базе AI, используя методы Data Data и ML для совершенствования и автоматизации бизнес-процессов клиентов.</p>
-              <p class="footer__text">Всегда оперирует тенденциями цифрового мира и концентрирует свои усилия на уникальности и инновационности методов в работе с каждым клиентом над созданием и адаптацией digital-идей и концепций.</p>
+              <div class="footer__text">
+                <p>EVEREST - опытный интегратор digital-технологий, продуктов и сервисов для цифровой трансформации бизнеса, корпоративного и государственного секторов.</p>
+                <p>Разрабатывает и внедряет решения на базе AI, используя методы Data Data и ML для совершенствования и автоматизации бизнес-процессов клиентов.</p>
+                <p>Всегда оперирует тенденциями цифрового мира и концентрирует свои усилия на уникальности и инновационности методов в работе с каждым клиентом над созданием и адаптацией digital-идей и концепций.</p>
+              </div>
               <form class="footer__form">
                 <div class="form_input">
                   <div class="form_input__field">
@@ -494,6 +582,27 @@
                   <button class="footer__form_btn" type="submit">Подписаться</button>
                 </div>
               </form>
+            </div>
+            <div class="footer__column footer__column--mod_mobile">
+              <ul class="social_list footer__social">
+                <li class="social_item"><a class="social_link social_link--size_1_mod" href="#" target="_blank">
+                    <svg class="icon icon_facebook icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="social_item"><a class="social_link social_link--size_2_mod" href="#" target="_blank">
+                    <svg class="icon icon_twitter icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#twitter"></use>
+                    </svg></a></li>
+                <li class="social_item"><a class="social_link social_link--size_3_mod" href="#" target="_blank">
+                    <svg class="icon icon_rss icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#rss"></use>
+                    </svg></a></li>
+                <li class="social_item"><a class="social_link social_link--size_4_mod" href="#" target="_blank">
+                    <svg class="icon icon_youtube icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="footer__copyright"><span class="footer__copyright_icon">©</span><span class="footer__copyright_text">2020 Everest.</span><span class="footer__copyright_text">ALL RIGHTS RESERVED</span></div>
             </div>
           </div>
         </div>
